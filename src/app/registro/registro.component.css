@@ -1,0 +1,23 @@
+.formulario { max-width: 420px; margin: 2rem auto; font-family: system-ui, sans-serif; }
+.campo { margin-bottom: 1rem; display: flex; flex-direction: column; }
+label { font-weight: 600; margin-bottom: .25rem; }
+
+input { padding: .55rem; border: 2px solid #ccc; border-radius: 6px; outline: none; }
+input:focus { border-color: #4a90e2; }
+
+/* Campo válido (solo después de interactuar) */
+input.ng-touched.ng-valid,
+input.ng-dirty.ng-valid { border-color: #2e9e4f; background: #f1fbf4; }
+
+/* Campo inválido (solo después de interactuar) */
+input.ng-touched.ng-invalid,
+input.ng-dirty.ng-invalid { border-color: #d93025; background: #fdf1f0; }
+
+.error { color: #d93025; margin-top: .25rem; font-size: .85rem; }
+.exito { background: #e6f4ea; color: #1e7b34; padding: .6rem; border-radius: 6px; margin-bottom: 1rem; }
+
+button { width: 100%; padding: .7rem; border: none; border-radius: 6px;
+         background: #4a90e2; color: #fff; font-size: 1rem; cursor: pointer; }
+button:disabled { background: #b8c4d1; cursor: not-allowed; }
+
+.lista { max-width: 420px; margin: 1rem auto; font-family: system-ui, sans-serif; }
